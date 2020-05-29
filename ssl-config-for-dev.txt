@@ -1,0 +1,11 @@
+how to use ssl for localhost develop
+
+1.install openssl
+2.openssl req -nodes -new -x509 -keyout server.key -out server.cert
+3.copy server.key and server.cert to your project folder
+  ../keys/
+        server.key
+        server.cert
+4.add script to package.json
+  "dev": "cross-env NODE_ENV=dev nodemon server/index.js --watch server",
+5.create index.js and config key
