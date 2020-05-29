@@ -1,5 +1,5 @@
 how to use ssl for localhost develop
-
+use koa as server 
 1.install openssl
 2.openssl req -nodes -new -x509 -keyout server.key -out server.cert
 3.copy server.key and server.cert to your project folder
@@ -8,4 +8,4 @@ how to use ssl for localhost develop
         server.cert
 4.add script to package.json
   "dev": "cross-env NODE_ENV=dev nodemon server/index.js --watch server",
-5.create index.js and config key
+5.create index.js and config key, pls refer to index.js file
