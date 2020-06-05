@@ -9,3 +9,9 @@ use koa as server
 4.add script to package.json
   "dev": "cross-env NODE_ENV=dev nodemon server/index.js --watch server",
 5.create index.js and config key, pls refer to index.js file
+6.when access https://localhost warn by invaild ssl certification, change config 
+ Chrome
+ chrome://flags/#allow-insecure-localhost
+
+ Mac Edge
+ edge://flags/#allow-insecure-localhost
